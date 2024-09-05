@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- <base href="UN ENLACE UNICO QUE ESTA ASOCIADO A ETIQUETAS (A) Y (IMG)"> -->
+    <!--Con la Propiedad target=(_blank){Abrir Pestaña Nueva} o (_self){Abris en la misma pestaña}-->
+
+    <meta charset="UTF-8">
+    
+    <!--ETIQUETAS META ESTRUCTURA NAME Y CONTENT-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para dispositivos moviles escala el contenido, no permite las barras de nav horizontales-->
+    <meta name="description" content="Este es una descripcion en general que aparecera en los buscadores como Google o Bing debajo de los enlaces enmarcados en azul y subrayados">
+    <meta name="keyword" content="Palabra Clave 1, Palabra Clave 2, Palabra con la cual los usuarios pueden encontrar el sitio web">
+    <meta name="author" content="Yo y solo yo o alguien mas. Si se necesita especificar al autor de un blog (Ej)">
+    <meta name="date" content="12-12-23"><!--Fecha Publicacion-->
+    <!--Como actuan los buscadores con name=robots-->
+    <meta name="robots" content="index,follow">
+    <meta name="robots" content="noindex, nofollow">
+    <!--     -->
+
+    <!--ETIQUETAS META ESTRUCTURA HTTP-EQUIV-->
+
+    <!-- <meta http-equiv="refresh" content="10(diez seg);url=https:/Un sitio web que se redireccionara en un tiempo determinado"> -->
+
+    <title>Mis Practicas</title>
+
+    <!-- ETIQUETAS LINK (VINCULAR RECURSOS A ESTE ARCHIVO)-->
+    <link rel="stylesheet" href="style.css"><!-- Atributo media=(print) o (screen) -->
+    <link rel="shortcut icon"  type="image/png" href="img.png"><!-- vale con solo poner rel=icon y href -->
+</head>
+<body>
+    <hr>
+    <h1>Mi primera Pagina Web h1</h1> <!--Encabezados-->
+    <h2>Mi Primera Pagina Web h2</h2>
+    <h3>Mi primera Pagina Web h3</h3>
+    <h4>Mi primera Pagina Web h4</h4>
+    <h5>Mi primera Pagina web h5</h5>
+    <h6>Mi primera Pagina Web h6 Limite de Titulos</h6>
+    <p>Parafo normal con etiqueta p</p>
+    <hr>
+    <!--ESTRUCTURA DE BODY-->
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <footer></footer>
+
+    <!--ESTRUCTURA DE UN CUADRO FLOTANTE DE ALERTA-->
+    <dialog open>
+        <p>Este es un mensaje Flotante</p>
+        <form method="dialog">
+            <button>Okey</button>
+        </form>
+    </dialog>
+
+    <!--ESTRUCTURA DE ACORDEON-->
+    <details>
+        <summary>Este es el titulo</summary>
+        Esta es la descripcion
+    </details>
+    
+    <address><!--Informacion Autor o Empresa (Direccion)-->
+        Nombre de Empresa: DanDri <br>
+        Codigo Postal: 0000 <br>
+        Numero: +591 77777 <br>
+        Calle: Rojas Palmas <br>
+        Correo Electronico: <a href="">minombre@gmail.com</a>
+    </address>
+    <hr>
+
+
+    <aside>
+        <p>ASIDE=Este es un CONTENEDOR que puede contener informacion adicional no relevante en el sitio web, como widgens o publicidad directamente e incluso bibliografias o inf adicional.</p>
+    </aside>
+    <div>
+        <p>DIV=Contenedo o divicion utilizada en interacciones o cosas que nada tienen que ver con el contenido de un sitio web.</p>
+    </div>
+    <section>
+        <p>SECTION=Puede Seccionar la pag web. Etiqueta con valor semantico</p>
+
+        <article>
+            <p>ARTICLE=Es un articulo con valor semantico, utilizado para documentos web, contenido principal de un sitio web.</p>
+        </article>
+    </section>
+    <hr>
+
+    <blockquote>
+        <p>BLOCKQUOTE=Etiqueta utilizada para citas bibliograficas<br>
+        PROPIEDADES: --------------<br>
+        cite=Se pone la URL de la cita. ;datetime=Especifica fecha hora de la cita.</p>
+    </blockquote>
+
+    <!--LISTA DE DEFINICIONES EN HTML-->
+    <hr>
+    <dl>
+        <dt>Termino</dt>
+        <dd>Definision del anterior termino</dd>
+        <dt>Otro Termino</dt>
+        <dd>Definicion de lo de arriba :v</dd>
+    </dl>
+
+    <hr>
+
+    <figure> <!--Para agrupar multimedia-->
+        <img src="img.png" alt="Imagen-gato" title="Imagen de gato" width="450px">
+        <figcaption>Esta es la imagen de un gato</figcaption> <!--Para descripcion o leyenda-->
+    </figure>
+
+    <hr>
+
+    <ul> <!--LISTA NO ORDENADA-->
+        <li>Gatos</li>
+        <li>Perros</li>
+        <li>Loros</li>
+        <li>Pajaros</li>
+        <!--ATRIBUTOS:
+        TYPE= {disc, circle, square} El tipo de icono que se usara.
+        -->
+    </ul>
+
+    <ol type="I"> <!--LISTA ORDENADA-->
+        <li>Gatos</li>
+        <li>Perros</li>
+        <li>Loros</li>
+        <li>Pajaros</li>
+        <!--ATRIBUTOS PARA LI:
+        VALUE= (int) Determina la posicion desde donde va a empezar a contar, por defecto es 1,2,3,4,...
+        PARA OL:
+        TYPE= {a,A,1,i,I} Determina el tipo de marcado con la cual se anumera la liste
+        -->
+    </ol>
+
+    <hr>
+
+    <pre>
+        Contenido que no tiene ningun formato, se muestra tal cual a como se ve en el codigo. fghfghf
+        <!--ATRIBUTOS:
+        CONTENTEDITABLE= (True,Flase) Si el contenido se puede editar o no.
+        SPELLCHECK= (True,False) si tiene que revisarse ortograficamente.
+        -->
+    </pre>
+
+    <hr>
+
+    <a href="img.png" download="true">Un Enlace Descargable</a> <br>
+    <a href="" target="_blank">Un enlace que abre el enlace en una nueva pestaña</a> <br>
+    <a href="" rel="">VALORES: {nofollow,noopener,noreferrer} Para seguridad, entre relaciones de los enlaces.</a>
+
+    <hr>
+
+    <abbr title="Descripcion de la misma Abreviacion">Abreviacion</abbr> <br>
+    <b>negritas</b> <br>
+    <bdo dir="rtl">Texto con direccion especifica</bdo> <br>
+    <code>Escribir codigo</code> <br>
+    <data value="23" type="number"></data> <!--ATRUBUTOS OBLIGATORIOS_
+    VALUE= El valor que toma la etiqueta sin tomar lo dentro del elemento
+    TYPE= El tipo de dato {string,number,date,time,datetime,month,week,range,color}
+    -->
+    <dfn>Termino no conocido o tecnico de un texto</dfn> <br>
+    <em>Palabra importante dentro de un texto</em> <br>
+    <i>Palabra Cursiva</i> <br>
+    <kbd>Del teclado: Ctrl, etc. Tambien comandos</kbd> <br>
+    <mark>Remarca con resaltador texto, importante o lo nuevo</mark> <br>
+    <q>Para citas cortas de uno a dos fraces.</q> <br>
+    <samp>E/S Del usuario, no es un formato de texto como code o pre</samp>
+
+    <!--TABLAS HTML-->
+    <table>
+        <thead>
+            <tr>
+                <th>Head 1</th>
+                <th>Head 2</th>
+                <th>Head 3</th>
+                <th>Head 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                <td>Columna 4</td>
+            </tr>
+            <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                <td>Columna 4</td>
+            </tr>
+            <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                <td>Columna 4</td>
+            </tr>
+            <tr>
+                <td>Columna 1</td>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                <td>Columna 4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+<!-- 
+    ATRIBUTOS GLOBALES 
+title = Es un cuadro de texto que aparece cuando el cursos esta encima del elemento. Es un tooltip.
+style = Estilos css directamente en el elemento.
+lang = Especifica el idioma de un elemento.
+tabindex = navegacion con el TAB del teclado.
+
+
+    RAROS
+data- = Agregar Atributos personalizados para JS.
+aria- = Accessible Rich Internet Applications == Aplicaciones de Internet enriquecidas accesibles
+dir = Especifica la direccion en la que se lee en un idioma = (rtl)(ltr)
+
+-->
